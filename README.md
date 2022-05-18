@@ -1,2 +1,2 @@
 # Java-Fundamentals
-SImple console-based prgrams
+SImple console-based programs
