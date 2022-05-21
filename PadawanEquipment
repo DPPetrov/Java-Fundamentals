@@ -6,7 +6,7 @@ public class PadawanEquipment {
 
         double budget = Double.parseDouble(sc.nextLine());
         int studentCount = Integer.parseInt(sc.nextLine());
-        double saberPrice = Integer.parseInt(sc.nextLine());
+        double saberPrice = Double.parseDouble(sc.nextLine());
         double robesPrice = Double.parseDouble(sc.nextLine());
         double beltPrice = Double.parseDouble(sc.nextLine());
 
