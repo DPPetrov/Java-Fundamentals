@@ -24,7 +24,7 @@ public class PadawanEquipment {
         if (budget > totalSum){
             System.out.printf("The money is enough - it would cost %.2flv.",totalSum);
         }else{
-            System.out.printf("George Lucas will need %.2f lv more.", totalSum - budget);
+            System.out.printf("George Lucas will need %.2flv more.", totalSum - budget);
         }
     }
 }
