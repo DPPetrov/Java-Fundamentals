@@ -16,7 +16,6 @@ public class Orders {
 
            if (i < n){
                System.out.printf("The price for the coffee is: $%.2f\n",total);
-
                continue;
            }
             System.out.printf("The price for the coffee is: $%.2f\n",total);
