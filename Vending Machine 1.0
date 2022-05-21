@@ -1,0 +1,86 @@
+
+import java.util.Scanner;
+
+public class VendingMachine1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String command = sc.nextLine();
+        double sum = 0;
+
+        while (!command.equals("Start")){
+            double amount = Double.parseDouble(command);
+
+            if (amount != 0.1 && amount != 0.2 && amount != 0.5 && amount != 1.0 && amount !=2.0){
+                System.out.printf("Cannot accept %.2f\n", amount);
+
+            }else {
+                sum += amount;
+            }
+
+            command = sc.nextLine();
+        }
+
+        String product = sc.nextLine();
+
+
+
+        while (!product.equals("End")){
+
+            switch (product.toLowerCase()){
+
+                case "nuts":
+                    if (sum < 2){
+                        System.out.println("Sorry, not enough money");
+
+                    }else{
+                        System.out.println("Purchased " + product);
+                        sum -= 2;
+                    }
+
+                    break;
+
+                case "water":
+                    if (sum < 0.7){
+                        System.out.println("Sorry, not enough money");
+                    }else{
+                        System.out.println("Purchased " + product);
+                        sum -= 0.7;
+                    }
+                    break;
+                case "crisps":
+                    if (sum < 1.5){
+                        System.out.println("Sorry, not enough money");
+                    }else{
+                        System.out.println("Purchased " + product);
+                        sum -= 1.5;
+                    }
+                    break;
+                case "soda":
+                    if (sum < 0.8){
+                        System.out.println("Sorry, not enough money");
+                    }else{
+                        System.out.println("Purchased " + product);
+                        sum -= 0.8;
+                    }
+                    break;
+                case "coke":
+                    if (sum < 1.0){
+                        System.out.println("Sorry, not enough money");
+                    }else{
+                        System.out.println("Purchased " + product);
+                        sum -= 1.0;
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid product");
+            }
+
+            product = sc.nextLine();
+        }
+
+        if (product.equals("End")){
+            System.out.printf("Change: %.2f", sum);
+        }
+
+    }
+}
