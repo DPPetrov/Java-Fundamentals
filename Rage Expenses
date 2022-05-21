@@ -29,6 +29,8 @@ public class RageExpenses {
                 mouseCost += mouseCount * mousePrice;
             }else if (lostGames % 6 == 0){
                 keyboardCount++;
+                mouseCount++;
+                keyboardCount++;
                 keyboardCost +=  keyboardCount * keyboardPrice;
             }
 
