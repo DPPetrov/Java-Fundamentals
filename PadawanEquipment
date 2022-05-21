@@ -10,8 +10,8 @@ public class PadawanEquipment {
         double robesPrice = Double.parseDouble(sc.nextLine());
         double beltPrice = Double.parseDouble(sc.nextLine());
 
-        double saberCount = saberPrice * (Math.ceil( studentCount + studentCount * 0.1));
-        double totalSaber = saberCount + saberPrice * studentCount;
+        double saberCount = Math.ceil(studentCount + studentCount * 0.1);
+        double totalSaber = saberCount * saberPrice;
         double totalRobes = robesPrice * studentCount;
         double totalBelt = beltPrice * studentCount;
 
