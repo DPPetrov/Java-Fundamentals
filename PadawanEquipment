@@ -16,7 +16,7 @@ public class PadawanEquipment {
         double totalBelt = beltPrice * studentCount;
 
         if (studentCount % 6 == 0){
-            totalBelt -= studentCount / 6 * beltPrice;
+            totalBelt = beltPrice * studentCount - studentCount / 6;
         }
 
         double totalSum = totalBelt + totalRobes + totalSaber;
