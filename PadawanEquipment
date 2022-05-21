@@ -22,7 +22,7 @@ public class PadawanEquipment {
         double totalSum = totalBelt + totalRobes + totalSaber;
 
         if (budget > totalSum){
-            System.out.printf("The money is enough - it would cost %.2flv.", budget - totalSum);
+            System.out.printf("The money is enough - it would cost %.2flv.",totalSum);
         }else{
             System.out.printf("George Lucas will need %.2f lv more.", totalSum - budget);
         }
