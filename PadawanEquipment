@@ -9,9 +9,7 @@ public class PadawanEquipment {
         double saberPrice = Double.parseDouble(sc.nextLine());
         double robesPrice = Double.parseDouble(sc.nextLine());
         double beltPrice = Double.parseDouble(sc.nextLine());
-
-        double saberCount = Math.ceil(studentCount + studentCount * 0.1);
-        double totalSaber = saberCount * saberPrice;
+        double totalSaber = Math.ceil(studentCount + studentCount * 0.1)* saberPrice;
         double totalRobes = robesPrice * studentCount;
         double totalBelt = beltPrice * studentCount;
 
@@ -21,7 +19,7 @@ public class PadawanEquipment {
 
         double totalSum = totalBelt + totalRobes + totalSaber;
 
-        if (budget > totalSum){
+        if (budget >= totalSum){
             System.out.printf("The money is enough - it would cost %.2flv.",totalSum);
         }else{
             System.out.printf("George Lucas will need %.2flv more.", totalSum - budget);
