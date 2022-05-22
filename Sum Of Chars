@@ -13,7 +13,7 @@ public class SumOfChars {
 
             for (int k = 0; k < input.length(); k++) {
 
-                currentChar = input.charAt(i);
+                currentChar = input.charAt(k);
                 sum += currentChar;
             }
 
