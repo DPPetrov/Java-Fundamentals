@@ -8,8 +8,9 @@ public class SumDigits {
        int sum = 0;
 
        while (input > 0){
-           sum += input % 10;
-           input /= 10;
+           sum += input % 10; // we take the last digit and add it to the sum ( 543 -> 54 (3) )
+           input /= 10; // we remove the last digit entirely, so that the next num in line can be added to the sum (was 543, now 54; the sum is 3
+                        // and the next num to be added to the sum will be 5(4). 
        }
 
         System.out.println(sum);
