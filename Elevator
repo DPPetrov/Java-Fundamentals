@@ -15,7 +15,7 @@ public class Elevator {
 
         }else{
 
-            double courses = (int)Math.ceil((double) capacity / people);
+            double courses = (int)Math.ceil((double) people / capacity);
             System.out.printf("%.0f", courses);
 
         }
