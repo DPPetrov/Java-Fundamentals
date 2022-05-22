@@ -1,24 +1,22 @@
 import java.util.Scanner;
 
-public class SumOfChars {
+public class ASCIItable {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int columns = Integer.parseInt(sc.nextLine());
-        int sum = 0;
-        int currentChar = 0;
 
-        for (int i = 1; i <= columns; i++) {
-            String input = sc.nextLine();
+        String startIndex = sc.nextLine();
+        String endIndex = sc.nextLine();
+        int startChar = startIndex.length();
+        int endChar = endIndex.length();
+        char temp;
 
-            for (int k = 0; k < input.length(); k++) {
-
-                currentChar = input.charAt(k);
-                sum += currentChar;
-            }
+        for (int i = startIndex.length(); i <= endIndex.length() ; i++) {
+            
+            temp 
+            System.out.println(temp);
 
         }
 
-        System.out.println(sum);
     }
 }
