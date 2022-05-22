@@ -1,6 +1,9 @@
+package com.company;
+
 import java.util.Scanner;
 
-public class RageExpenses {
+public class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,9 +13,16 @@ public class RageExpenses {
         double keyboardPrice = Double.parseDouble(sc.nextLine());
         double displayPrice = Double.parseDouble(sc.nextLine());
 
+        double headsetExpense = 0;
         int headsetCount = 0;
+        double mouseExpense = 0;
         int mouseCount = 0;
-         for (int i = 1; i <= lostGames ; i++) {
+        double keyboardExpense = 0;
+        int keyboardCount = 0;
+        double displayExpense = 0;
+        int displayCount = 0;
+
+        for (int i = 1; i <= lostGames ; i++) {
 
             if (i % 2 == 0){
                 headsetCount++;
@@ -25,12 +35,12 @@ public class RageExpenses {
                 mouseExpense = mouseCount * mousePrice;
             }
 
-            if ( i % mouseCount == 0 && i % headsetCount == 0){
+            if ( mouseCount % 2 == 0 && headsetCount % 3 == 0){
                 keyboardCount++;
                 keyboardExpense = keyboardCount * keyboardPrice;
             }
 
-            if (i % keyboardCount == 0){
+            if (keyboardCount % 2 == 0){
                 displayCount++;
                 displayExpense = displayCount * displayPrice;
             }
