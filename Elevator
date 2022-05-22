@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Elevator {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int people = Integer.parseInt(sc.nextLine());
+        int capacity = Integer.parseInt(sc.nextLine());
+
+        if (people > capacity){
+
+            double courses = (int)Math.ceil(((double) people/capacity));
+            System.out.printf("%.0f", courses);
+
+        }else{
+
+            double courses = (int)Math.ceil((double) capacity / people);
+            System.out.printf("%.0f", courses);
+
+        }
+
+    }
+}
