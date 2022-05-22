@@ -47,6 +47,6 @@ public class Main {
 
         double totalExpense = headsetExpense + mouseExpense + keyboardExpense + displayExpense;
 
-        System.out.printf("Rage expense: %.2f", totalExpense);
+        System.out.printf("Rage expenses: %.2f lv.", totalExpense);
     }
 }
