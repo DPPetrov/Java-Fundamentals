@@ -22,7 +22,7 @@ public class Main {
         double displayExpense = 0;
         int displayCount = 0;
 
-        for (int i = 1; i <= lostGames ; i++) {
+        for (int i = 2; i <= lostGames ; i++) {
 
             if (i % 2 == 0){
                 headsetCount++;
