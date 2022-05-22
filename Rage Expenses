@@ -12,37 +12,34 @@ public class RageExpenses {
 
         int headsetCount = 0;
         int mouseCount = 0;
-        int keyboardCount = 0;
-        int displayCount = 0;
-        double headsetCost = 0;
-        double mouseCost = 0;
-        double keyboardCost = 0;
-        double displayCost = 0;
+         for (int i = 1; i <= lostGames ; i++) {
 
-        for (int i = 2; i <= lostGames; i++) {
-
-            if (lostGames % 2 == 0){
+            if (i % 2 == 0){
                 headsetCount++;
-                headsetCost += headsetCount * headsetPrice;
-            }else if (lostGames % 3 == 0){
-                mouseCount++;
-                mouseCost += mouseCount * mousePrice;
-            }else if (lostGames % 6 == 0){
-                keyboardCount++;
-                mouseCount++;
-                keyboardCount++;
-                keyboardCost +=  keyboardCount * keyboardPrice;
+                headsetExpense += headsetCount * headsetPrice;
+
             }
 
-            if (keyboardCount % 2 == 0){
-                displayCount++;
-                displayCost += displayCount * displayPrice;
+            if (i % 3 == 0){
+                mouseCount++;
+                mouseExpense = mouseCount * mousePrice;
             }
+
+            if ( i % mouseCount == 0 && i % headsetCount == 0){
+                keyboardCount++;
+                keyboardExpense = keyboardCount * keyboardPrice;
+            }
+
+            if (i % keyboardCount == 0){
+                displayCount++;
+                displayExpense = displayCount * displayPrice;
+            }
+
 
         }
 
-        double total = headsetCost + mouseCost + keyboardCost + displayCost;
+        double totalExpense = headsetExpense + mouseExpense + keyboardExpense + displayExpense;
 
-        System.out.printf("Rage expenses: %.2f lv.", total);
+        System.out.printf("Rage expense: %.2f", totalExpense);
     }
 }
