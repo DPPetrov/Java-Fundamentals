@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumOfChars {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int columns = Integer.parseInt(sc.nextLine());
+        int sum = 0;
+        int currentChar = 0;
+
+        for (int i = 1; i <= columns; i++) {
+            String input = sc.nextLine();
+
+            for (int k = 0; k < input.length(); k++) {
+
+                currentChar = input.charAt(i);
+                sum += currentChar;
+            }
+
+        }
+
+        System.out.println(sum);
+    }
+}
