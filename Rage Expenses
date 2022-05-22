@@ -14,31 +14,33 @@ public class Main {
         double displayPrice = Double.parseDouble(sc.nextLine());
 
         double headsetExpense = 0;
-       
         double mouseExpense = 0;
-        
         double keyboardExpense = 0;
-        int keyboardCount = 0;
+
         double displayExpense = 0;
-        
+
 
         for (int i = 2; i <= lostGames ; i++) {
 
             if (i % 2 == 0){
-                
-                headsetExpense += headsetCount * headsetPrice;
+
+                headsetExpense += headsetPrice;
 
             }
 
             if (i % 3 == 0){
-                
-                mouseExpense = mouseCount * mousePrice;
+
+                mouseExpense += mousePrice;
             }
 
-          
-             if (i % 6 == 0){
-                keyboardCount++;
+
+            if (i % 2 == 0 && i % 3 == 0){
                 keyboardExpense += keyboardPrice;
+
+            }
+
+            if (i % 12 == 0){
+                displayExpense += displayPrice;
             }
 
         }
