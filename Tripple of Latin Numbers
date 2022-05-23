@@ -15,7 +15,7 @@ public class TrippleOfLetters {
 
                     for (char j  = 'a'; j < 'a' + n; j++){
 
-                        System.out.println(i + " " + k + " " + j);
+                        System.out.println(i + "" + k + "" + j);
                     }
                 }
 
