@@ -15,6 +15,7 @@ public class GamingStore {
                 balance -= 39.99;
                  break;
                   default:
+                  System.out.println("Not Found");
             }
         }
     }
