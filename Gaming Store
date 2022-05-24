@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class GamingStore {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String command = sc.nextLine();
-
-        while (!command.equals("Game Time")){
-            
-        }
+        
     }
 }
