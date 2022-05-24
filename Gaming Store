@@ -15,7 +15,7 @@ public class GamingStore {
                 balance -= 39.99;
                  break;
                  case "CS: OG":
-                 
+                  balance -= 15.99;
                   default:
                   System.out.println("Not Found");
                   break;
