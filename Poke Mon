@@ -15,7 +15,7 @@ public class PokeMon {
             pokeCount++;
             power -= distance;
 
-            if (power == originalPower / 2){
+            if (power == originalPower / 2 && exhaustion > 0){
                 power /= exhaustion;
 
             }
