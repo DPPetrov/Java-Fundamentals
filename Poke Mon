@@ -13,13 +13,12 @@ public class PokeMon {
         while (power >= distance){
 
             pokeCount++;
+            power -= distance;
 
             if (power == originalPower / 2){
                 power /= exhaustion;
 
             }
-
-            power -= distance;
 
         }
 
