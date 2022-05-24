@@ -4,7 +4,7 @@ public class Spices {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int startingYield = Integer.parseInt(sc.nextLine());
-        int remainder = 0;
+        int reserve = 0;
         int daysCount = 0;
 
         for (int i = startingYield; i >= 0; i -= 10) {
@@ -19,6 +19,6 @@ public class Spices {
         }
 
         System.out.println(daysCount);
-        System.out.println(remainder);
+        System.out.println(reserve - 26);
     }
 }
