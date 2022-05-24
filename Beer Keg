@@ -5,8 +5,8 @@ public class BeerKegs {
         Scanner sc = new Scanner(System.in);
 
         int lines = Integer.parseInt(sc.nextLine());
-        double temp = 0;
-        String model = "";
+        double tempValue = Double.MIN_VALUE;
+        String model;
         String tempModel = "";
 
         for (int i = 1; i <= lines ; i++) {
@@ -16,8 +16,8 @@ public class BeerKegs {
 
             double volume = Math.PI * 2 * radius * height;
 
-            if (volume >= temp) {
-                temp = volume;
+            if (volume > tempValue) {
+                tempValue = volume;
                 tempModel = model;
             }
         }
