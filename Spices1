@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Spices1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int startingYield = Integer.parseInt(sc.nextLine());
+        int reserve = 0;
+        int daysCount = 0;
+
+        while (startingYield > 100){
+            
+            daysCount++;
+            reserve += startingYield - 26;
+            startingYield -= 10;
+        }
+
+        if (reserve < 0){
+            reserve = 0;
+        }
+
+        System.out.println(daysCount);
+        System.out.println(reserve -26);
+    }
+}
