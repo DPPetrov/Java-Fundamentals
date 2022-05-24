@@ -15,8 +15,8 @@ public class PokeMon {
             power -= distance;
             remainingPower = power;
             
-             if (remainingPower == Math.round(1 * 0.5)){
-                remainingPower /= exhaustion;
+             if (power == Math.round(1 * 0.5)){
+                power /= exhaustion;
 
             }
             
