@@ -18,6 +18,10 @@ public class SnowBalls {
 
             if (snowballValue > highestValue){
                 highestValue = snowballValue;
+                
+                 a = snowballSnow;
+                b = snowballTime;
+                c = snowballQuality;
             }
             
             if (snowballSnow > a){
