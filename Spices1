@@ -7,7 +7,7 @@ public class Spices1 {
         int reserve = 0;
         int daysCount = 0;
 
-        while (startingYield > 100){
+        while (startingYield >= 100){
 
             daysCount++;
             reserve += startingYield - 26;
