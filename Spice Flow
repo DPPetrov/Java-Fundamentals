@@ -14,7 +14,7 @@ public class Spices {
             }
             daysCount++;
 
-            remainder = startingYield - 26;
+            remainder = i - 26;
              
         }
 
