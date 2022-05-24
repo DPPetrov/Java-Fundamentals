@@ -7,6 +7,7 @@ public class BeerKegs {
         int lines = Integer.parseInt(sc.nextLine());
         double temp = 0;
         String model = "";
+        String tempModel = "";
 
         for (int i = 1; i <= lines ; i++) {
              model = sc.nextLine();
@@ -15,11 +16,12 @@ public class BeerKegs {
 
             double volume = Math.PI * 2 * radius * height;
 
-            if (volume > temp){
+            if (volume > temp) {
                 temp = volume;
+                tempModel = model;
             }
         }
 
-        System.out.println(model);
+        System.out.println(tempModel);
     }
 }
