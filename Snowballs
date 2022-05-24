@@ -24,6 +24,10 @@ public class SnowBalls {
                 c = snowballQuality;
             }
             
+            if (snowballSnow > a){
+                a = snowballSnow;
+            }
+            
 
         }
 
