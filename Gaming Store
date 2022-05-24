@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class GamingStore {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        double balance = Double.parseDouble(sc.nextLine());
+        String command;
     }
 }
