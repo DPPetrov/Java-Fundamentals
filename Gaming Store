@@ -12,6 +12,7 @@ public class GamingStore {
             switch (command){
 
                 case "OutFall 4":
+                balance -= 39.99;
             }
         }
     }
