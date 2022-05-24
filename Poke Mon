@@ -11,17 +11,14 @@ public class PokeMon {
        
 
         while (power >= distance){
-        
+        pokeCount++;
         if (power == power / 2){
                 power /= exhaustion;
 
             }
-            pokeCount++;
+            
             power -= distance;
-            remainingPower = power;
-            
-             
-            
+       
         }
         
          System.out.println(power);
