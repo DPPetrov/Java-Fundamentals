@@ -1,4 +1,4 @@
-import java.util.Scanner;
+eimport java.util.Scanner;
 
 public class Spices {
     public static void main(String[] args) {
