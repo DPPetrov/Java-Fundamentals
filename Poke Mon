@@ -8,7 +8,7 @@ public class PokeMon {
         int distance = Integer.parseInt(sc.nextLine());
         int exhaustion = Integer.parseInt(sc.nextLine());
         int pokeCount = 0;
-        int remainingPower = 0;
+       
 
         while (power >= distance){
             pokeCount++;
@@ -22,7 +22,7 @@ public class PokeMon {
             
         }
         
-         System.out.println(remainingPower);
+         System.out.println(power);
         System.out.println(pokeCount);
 
     }
