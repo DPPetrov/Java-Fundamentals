@@ -25,6 +25,7 @@ public class GamingStore {
                   break;
                   case "RoverWatch":
                   balance -= 29.99;
+                  break;
                   default:
                   System.out.println("Not Found");
                   break;
