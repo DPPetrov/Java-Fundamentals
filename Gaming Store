@@ -8,8 +8,8 @@ public class GamingStore {
 
         while (balance > 0){
             command = sc.nextLine();
-            
-            
+
+            switch ()
         }
     }
 }
