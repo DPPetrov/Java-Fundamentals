@@ -19,6 +19,6 @@ public class Spices {
         }
 
         System.out.println(daysCount);
-        System.out.println(startingYield);
+        System.out.println(remainder);
     }
 }
