@@ -12,6 +12,7 @@ public class PokeMon {
 
         while (power >= distance){
             power -= distance;
+            remainingPower = power;
             pokeCount++;
             
         }
