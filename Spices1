@@ -8,10 +8,14 @@ public class Spices1 {
         int daysCount = 0;
 
         while (startingYield > 100){
-            
+
             daysCount++;
             reserve += startingYield - 26;
             startingYield -= 10;
+        }
+        
+        if (startingYield < 100){
+            reserve -= 26;
         }
 
         if (reserve < 0){
@@ -19,6 +23,6 @@ public class Spices1 {
         }
 
         System.out.println(daysCount);
-        System.out.println(reserve -26);
+        System.out.println(reserve);
     }
 }
