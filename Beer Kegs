@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class BeerKegs2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int lines = Integer.parseInt(sc.nextLine());
+        double highestVolume = 0;
+        String model;
+        String highestModel = "";
+
+        while (lines > 0){
+
+            model = sc.nextLine();
+            double radius = Double.parseDouble(sc.nextLine());
+            int height = Integer.parseInt(sc.nextLine());
+
+            double volume = Math.PI * 2 * radius * height;
+
+            if (volume > highestVolume){
+                highestVolume = volume;
+                highestModel = model;
+            }
+
+            lines--;
+        }
+
+        System.out.println(highestModel);
+    }
+}
