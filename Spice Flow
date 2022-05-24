@@ -10,6 +10,7 @@ public class Spices {
         for (int i = startingYield; i >= 0; i -= 10) {
             
             if (i < 100){
+                reserve -= 26;
                 break;
             }
             daysCount++;
@@ -17,8 +18,12 @@ public class Spices {
             reserve = i - 26;
              
         }
+        
+        if (reserve <= 0){
+            reserve = 0;
+        }
 
         System.out.println(daysCount);
-        System.out.println(reserve - 26);
+        System.out.println(reserve);
     }
 }
