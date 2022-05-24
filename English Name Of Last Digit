@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class EnglishNameOfLastDigit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int number = Integer.parseInt(sc.nextLine());
+        int newNum = number % 10;
 
-
+        switch (newNum){
+            
         }
     }
 }
