@@ -14,7 +14,7 @@ public class Spices {
             }
             daysCount++;
 
-            remainder = i - 26;
+            reserve = i - 26;
              
         }
 
