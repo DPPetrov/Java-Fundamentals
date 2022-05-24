@@ -16,7 +16,7 @@ public class BeerKegs {
 
             double volume = Math.PI * 2 * radius * height;
 
-            if (volume > temp) {
+            if (volume >= temp) {
                 temp = volume;
                 tempModel = model;
             }
