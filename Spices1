@@ -14,9 +14,8 @@ public class Spices1 {
             startingYield -= 10;
         }
         
-        if (startingYield < 100){
             reserve -= 26;
-        }
+        
 
         if (reserve < 0){
             reserve = 0;
