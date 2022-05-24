@@ -28,7 +28,7 @@ public class SnowBalls {
                 a = snowballSnow;
             }
             
-            if (snowballTime > b){
+           if (snowballTime > b){
                 b = snowballTime;
             }
             
