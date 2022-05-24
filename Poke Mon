@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class PokeMon {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int power = Integer.parseInt(sc.nextLine());
+        int distance = Integer.parseInt(sc.nextLine());
+        int exhaustion = Integer.parseInt(sc.nextLine());
+        int pokeCount = 0;
+        int remainingPower = 0;
+
+        while (distance >= power){
+            pokeCount++;
+            remainingPower = distance - power;
+        }
+
+    }
+}
