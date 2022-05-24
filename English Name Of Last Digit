@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public class EnglishNameOfLastDigit {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in);
+
+        String input = sc.nextLine();
+
+        for (int i = 0; i < input.length(); i++) {
+            int num = input.charAt(i);
+            System.out.println(num);
+
+        }
     }
 }
