@@ -10,7 +10,7 @@ public class PokeMon {
         int pokeCount = 0;
         int remainingPower = 0;
 
-        while (distance >= power){
+        while (power >= distance){
             pokeCount++;
             remainingPower = distance - power;
         }
