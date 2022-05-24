@@ -16,6 +16,7 @@ public class GamingStore {
                  break;
                   default:
                   System.out.println("Not Found");
+                  break;
             }
         }
     }
