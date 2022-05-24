@@ -5,19 +5,17 @@ public class WaterOverflow {
         Scanner sc = new Scanner(System.in);
         int lines = Integer.parseInt(sc.nextLine());
         int sum = 0;
-        int liters;
 
-        for (int i = 1; i <= lines; i++) {
-             liters = Integer.parseInt(sc.nextLine());
+        for (int i = 1; i <= lines ; i++) {
+            int liters = Integer.parseInt(sc.nextLine());
             sum += liters;
 
             if (sum > 255){
-                System.out.println("Insufficient capacity!");
                 sum -= liters;
-                System.out.println(sum);
+                System.out.println("Insufficient capacity!");
+
             }
         }
-
-
+        System.out.println(sum);
     }
 }
