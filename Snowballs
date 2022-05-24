@@ -7,7 +7,7 @@ public class SnowBalls {
         int snowballs = Integer.parseInt(sc.nextLine());
         double snowballValue;
         double highestValue = 0;
-
+        int a = 0, b = 0, c = 0;
         for (int i = 1; i <= snowballs ; i++) {
 
             int snowballSnow = Integer.parseInt(sc.nextLine());
