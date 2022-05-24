@@ -26,7 +26,7 @@ public class GamingStore {
                   case "RoverWatch":
                   balance -= 29.99;
                   break;
-                  case "
+                  case "RoverWatch Origins Edition
                   default:
                   System.out.println("Not Found");
                   break;
