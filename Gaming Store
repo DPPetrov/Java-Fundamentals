@@ -11,7 +11,7 @@ public class GamingStore {
 
             switch (command){
 
-                case ""
+                case "OutFall 4":
             }
         }
     }
