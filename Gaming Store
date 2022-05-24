@@ -19,6 +19,7 @@ public class GamingStore {
                   break;
                   case "Zplinter Zell":
                   balance -= 19.99;
+                  break;
                   default:
                   System.out.println("Not Found");
                   break;
