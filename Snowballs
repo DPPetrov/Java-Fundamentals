@@ -23,10 +23,7 @@ public class SnowBalls {
                 b = snowballTime;
                 c = snowballQuality;
             }
-            
-         
-            
-
+      
         }
 
         System.out.printf("%d : %d = %.0f (%d)",a,b, highestValue, c );
