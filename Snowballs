@@ -35,6 +35,6 @@ public class SnowBalls {
 
         }
 
-        System.out.println(highestValue);
+        System.out.printf("%d : %d = %.0f (%d)",a,b, highestValue, c );
     }
 }
