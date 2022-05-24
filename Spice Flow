@@ -9,7 +9,7 @@ public class Spices {
 
         for (int i = startingYield; i >= 0; i -= 10) {
             
-            if (startingYield < 100){
+            if (i < 100){
                 break;
             }
             daysCount++;
