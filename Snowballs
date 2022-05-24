@@ -24,17 +24,7 @@ public class SnowBalls {
                 c = snowballQuality;
             }
             
-            if (snowballSnow > a){
-                a = snowballSnow;
-            }
-            
-             if (snowballTime > b){
-                b = snowballTime;
-            }
-            
-           if (snowballQuality > c){
-                c = snowballQuality;
-            }
+         
             
 
         }
