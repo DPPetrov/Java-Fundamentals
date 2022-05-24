@@ -21,6 +21,9 @@ public class PokeMon {
             }
             
         }
+        
+         System.out.println(remainingPower);
+        System.out.println(pokeCount);
 
     }
 }
