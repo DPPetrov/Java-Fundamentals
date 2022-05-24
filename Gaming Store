@@ -5,5 +5,11 @@ public class GamingStore {
         Scanner sc = new Scanner(System.in);
         double balance = Double.parseDouble(sc.nextLine());
         String command;
+
+        while (balance > 0){
+            command = sc.nextLine();
+            
+            
+        }
     }
 }
