@@ -22,6 +22,7 @@ public class GamingStore {
                   break;
                   case "Honored 2":
                   balance -= 59.99;
+                  break;
                   default:
                   System.out.println("Not Found");
                   break;
