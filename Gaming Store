@@ -18,70 +18,73 @@ public class GamingStore {
                          switch (command){
 
                             case "OutFall 4":
-                            if (balance < 39.99){
-                            System.out.println("Too Expensive");
-                            continue;
-                            }
-                            balance -= 39.99;
-                            moneySPent += 39.99;
-                            System.out.println("Bought " + command);
-                            break;
-                                case "CS: OG":
-                                if (balance < 15.99){
-                                System.out.println("Too Expensive");
-                                continue;
-                                }
-                                balance -= 15.99;
-                                moneySPent += 15.99;
-                                System.out.println("Bought " + command);
-                                break;
-                                    case "Zplinter Zell":
-                                    if (balance < 19.99){
+                                if (balance < 39.99){
                                     System.out.println("Too Expensive");
                                     continue;
                                 }
-                                     balance -= 19.99;
-                                     moneySPent += 19.99;
-                                     System.out.println("Bought " + command);
-                                    break;
-                                        case "Honored 2":
-                                        if (balance < 59.99){
-                                        System.out.println("Too Expensive");
-                                        continue;
-                            }
-                                            balance -= 59.99;
-                                            moneySPent += 59.99;
-                                        System.out.println("Bought " + command);
-                                        break;
-                                            case "RoverWatch":
-                                            if (balance < 29.99){
+                                balance -= 39.99;
+                                moneySPent += 39.99;
+                                System.out.println("Bought " + command);
+                                break;
+                                    case "CS: OG":
+                                        if (balance < 15.99){
                                             System.out.println("Too Expensive");
                                             continue;
-                            }
-                                            balance -= 29.99;
-                                            moneySPent += 29.99;
-                                            System.out.println("Bought " + command);
-                                            break;
-                                                case "RoverWatch Origins Edition":
-                                                if (balance < 39.99){
+                                        }
+                                    balance -= 15.99;
+                                    moneySPent += 15.99;
+                                    System.out.println("Bought " + command);
+                                    break;
+                                        case "Zplinter Zell":
+                                            if (balance < 19.99){
                                                 System.out.println("Too Expensive");
                                                 continue;
-                            }
-                                                balance -= 39.99;
-                                                moneySPent += 39.99;
-                                                System.out.println("Bought " + command);
-                                                break;
-                                                    default:
-                                                        System.out.println("Not Found");
-                                                        break;
+                                            }
+                                         balance -= 19.99;
+                                         moneySPent += 19.99;
+                                         System.out.println("Bought " + command);
+                                        break;
+                                            case "Honored 2":
+                                                if (balance < 59.99){
+                                                    System.out.println("Too Expensive");
+                                                    continue;
+                                                }
+                                            balance -= 59.99;
+                                            moneySPent += 59.99;
+                                            System.out.println("Bought " + command);
+                                            break;
+                                                case "RoverWatch":
+                                                    if (balance < 29.99){
+                                                        System.out.println("Too Expensive");
+                                                        continue;
+                                                    }
+                                                    balance -= 29.99;
+                                                    moneySPent += 29.99;
+                                                    System.out.println("Bought " + command);
+                                                    break;
+                                                        case "RoverWatch Origins Edition":
+                                                            if (balance < 39.99){
+                                                                System.out.println("Too Expensive");
+                                                                continue;
+                                                            }
+                                                            balance -= 39.99;
+                                                            moneySPent += 39.99;
+                                                            System.out.println("Bought " + command);
+                                                            break;
+                                                                default:
+                                                                    System.out.println("Not Found");
+                                                                    break;
                     }
 
-                            total = balance;
-                                if (total < 0){
-                                     total = 0;
-                                         System.out.println("Out of money!");
-                            }
+                    total = balance;
+                        if (total <= 0){
+                            total = 0;
+                            System.out.println("Out of money!");
+                            }else if(total == 0){
+                            System.out.println();
+                        }
                 }
-            System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
+                        System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
+
     }
 }
