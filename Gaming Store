@@ -33,6 +33,7 @@ public class GamingStore {
                   break;
                   case "Honored 2":
                   balance -= 59.99;
+                  System.out.println("Bought " + command);
                   break;
                   case "RoverWatch":
                   balance -= 29.99;
