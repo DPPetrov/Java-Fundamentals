@@ -3,5 +3,10 @@ class Main {
         System.out.print("O" + " " + "X" + " " + "X");
         System.out.print("O" + " " + "X" + " " + "O");
         System.out.print("X" + " " + "O" + " " + "X");
+        
+        System.out.println("Hello, Drago!");
     }
+}
+
+    
 }
