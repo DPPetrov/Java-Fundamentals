@@ -11,6 +11,9 @@ public class GamingStore {
             command = sc.nextLine();
 
             switch (command){
+            
+             total += balance;
+            command = sc.nextLine();
 
                 case "OutFall 4":
                 balance -= 39.99;
