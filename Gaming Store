@@ -83,6 +83,5 @@ public class GamingStore {
                             }
                 }
             System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
-
     }
 }
