@@ -46,8 +46,8 @@ public class GamingStore {
                                     break;
                                         case "Honored 2":
                                         if (balance < 59.99){
-                            System.out.println("Too Expensive");
-                            continue;
+                                        System.out.println("Too Expensive");
+                                        continue;
                             }
                                         balance -= 59.99;
                                             moneySPent += 59.99;
