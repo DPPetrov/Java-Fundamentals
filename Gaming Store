@@ -27,6 +27,10 @@ public class GamingStore {
                             System.out.println("Bought " + command);
                             break;
                                 case "CS: OG":
+                                if (balance < 39.99){
+                            System.out.println("Too Expensive");
+                            continue;
+                            }
                                 balance -= 15.99;
                                 moneySPent += 15.99;
                                 System.out.println("Bought " + command);
