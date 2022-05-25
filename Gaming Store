@@ -29,6 +29,7 @@ public class GamingStore {
                   break;
                   case "Zplinter Zell":
                   balance -= 19.99;
+                  System.out.println("Bought " + command);
                   break;
                   case "Honored 2":
                   balance -= 59.99;
