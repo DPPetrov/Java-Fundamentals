@@ -80,11 +80,9 @@ public class GamingStore {
                         if (total <= 0){
                             total = 0;
                             System.out.println("Out of money!");
-                            }else{
-                                System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
-
                             }
                 }
-                        
+                        System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
+
     }
 }
