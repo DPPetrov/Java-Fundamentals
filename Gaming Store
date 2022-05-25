@@ -52,6 +52,6 @@ public class GamingStore {
         if (balance <= 0){
                 System.out.println("Out of money!");
             }
-        System.out.printf("%s $%.2f", command, total);
+        System.out.printf("Total spent: %s $%.2f", command, total);
     }
 }
