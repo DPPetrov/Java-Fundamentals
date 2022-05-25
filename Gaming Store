@@ -49,7 +49,7 @@ public class GamingStore {
                                         System.out.println("Too Expensive");
                                         continue;
                             }
-                                        balance -= 59.99;
+                                            balance -= 59.99;
                                             moneySPent += 59.99;
                                         System.out.println("Bought " + command);
                                         break;
