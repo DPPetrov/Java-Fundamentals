@@ -36,6 +36,10 @@ public class GamingStore {
                                 System.out.println("Bought " + command);
                                 break;
                                     case "Zplinter Zell":
+                                    if (balance < 19.99){
+                                    System.out.println("Too Expensive");
+                                    continue;
+                                }
                                      balance -= 19.99;
                                      moneySPent += 19.99;
                                      System.out.println("Bought " + command);
