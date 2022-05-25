@@ -56,7 +56,7 @@ public class GamingStore {
                                             case "RoverWatch":
                                             if (balance < 29.99){
                                             System.out.println("Too Expensive");
-                            continue;
+                                            continue;
                             }
                                             balance -= 29.99;
                                             moneySPent += 29.99;
