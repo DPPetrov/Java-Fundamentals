@@ -21,6 +21,7 @@ public class GamingStore {
 
                 case "OutFall 4":
                 balance -= 39.99;
+                System.out.println("Bought " + command);
                  break;
                  case "CS: OG":
                   balance -= 15.99;
