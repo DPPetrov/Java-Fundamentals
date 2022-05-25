@@ -45,6 +45,8 @@ public class GamingStore {
             
         }
         
-        
+        if (balance == 0){
+                System.out.println("Out of money!");
+            }
     }
 }
