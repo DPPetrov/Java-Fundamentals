@@ -47,8 +47,7 @@ public class GamingStore {
                   System.out.println("Not Found");
                   break;
             }
-            
-            
+    
         }
         if (balance <= 0){
                 System.out.println("Out of money!");
