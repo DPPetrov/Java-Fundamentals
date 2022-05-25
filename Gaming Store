@@ -20,6 +20,8 @@ public class GamingStore {
                             case "OutFall 4":
                             if (balance < 39.99){
                             System.out.println("Too Expensive");
+                            continue;
+                            
                             balance -= 39.99;
                             moneySPent += 39.99;
                             System.out.println("Bought " + command);
