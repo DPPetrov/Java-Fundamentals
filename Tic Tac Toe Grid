@@ -31,6 +31,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("It compiles!"); //It prints "It compiles!"
         System.out.println ("Hi!");
+        
+        import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String line1 = "string";
+        String line2 = "str ing";
+        
+        System.out.println(line1.equalsIgnoreCase(line2))
+    }
+}
         }
     }
 }
