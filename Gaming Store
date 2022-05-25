@@ -8,7 +8,7 @@ public class GamingStore {
         double total = 0;
         double moneySPent = 0;
 
-            while (balance > 0){
+            while (balance >= 0){
 
                 command = sc.nextLine();
 
