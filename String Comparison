@@ -5,6 +5,6 @@ class Main {
         Scanner scanner = new Scanner(System.in);
         String line1 = scanner.nextLine();
         String line2 = scanner.nextLine();
-        System.out.println(line1.equalsIgnoreCase(line2))
+        System.out.println(line1.equals(line2.trim()));
     }
 }
