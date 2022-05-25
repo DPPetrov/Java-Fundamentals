@@ -69,7 +69,7 @@ public class GamingStore {
                                                             }
                                                             balance -= 39.99;
                                                             moneySPent += 39.99;
-                                                            //System.out.println("Bought " + command);
+                                                            System.out.println("Bought " + command);
                                                             break;
                                                                 default:
                                                                     System.out.println("Not Found");
