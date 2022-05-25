@@ -79,7 +79,7 @@ public class GamingStore {
                     total = balance;
                         if (total <= 0){
                             total = 0;
-                           // System.out.println("Bought " + command);
+                          
                             System.out.println("Out of money!");
                             }else{
                              System.out.printf("Total spent: $%.2f. Remaining: %.2f", moneySPent, total);
