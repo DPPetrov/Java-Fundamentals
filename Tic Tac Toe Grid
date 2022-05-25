@@ -1,0 +1,7 @@
+class Main {
+    public static void main(String[] args) {
+        System.out.print("O" + " " + "X" + " " + "X");
+        System.out.print("O" + " " + "X" + " " + "O");
+        System.out.print("X" + " " + "O" + " " + "X");
+    }
+}
