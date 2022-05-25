@@ -63,6 +63,10 @@ public class GamingStore {
                                             System.out.println("Bought " + command);
                                             break;
                                                 case "RoverWatch Origins Edition":
+                                                if (balance < 39.99){
+                            System.out.println("Too Expensive");
+                            continue;
+                            }
                                                 balance -= 39.99;
                                                 moneySPent += 39.99;
                                                 System.out.println("Bought " + command);
