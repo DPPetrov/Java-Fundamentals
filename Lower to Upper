@@ -1,18 +1,45 @@
 import java.util.Scanner;
 
-public class LowerToUpper {
+public class LowetToUpper {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         char[] lowerCase = {'a', 'b','c','d', 'e', 'f', 'g','h',
-        'i', 'j','k','l','m','n','o','p','q','r','s','t','u','v',
+                'i', 'j','k','l','m','n','o','p','q','r','s','t','u','v',
                 'w','x','y','z'};
-
-        if (input.equals(lowerCase)){
+    switch (input){
+        case "a":
+            case "b":
+        case "c":
+        case "d":
+        case "e":
+        case "f":
+        case "g":
+        case "h":
+        case "i":
+        case "j":
+        case "k":
+        case "l":
+        case "m":
+        case "n":
+        case "o":
+        case "p":
+        case "q":
+        case "r":
+        case "s":
+        case "t":
+        case "u":
+        case "v":
+        case "w":
+        case "x":
+        case "y":
+        case "z":
             System.out.println("lower-case");
-
-        }else{
+            break;
+        default:
             System.out.println("upper-case");
-        }
+
+    }
+
     }
 }
