@@ -1,0 +1,20 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+ 
+public class O3ExactSum {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+ 
+   BigDecimal sum = BigDecimal.ZERO;
+       while (n-- >0){
+           BigDecimal bd = new BigDecimal(scanner.nextLine());
+           sum = bd.add(bd);
+       }
+ 
+        System.out.println(sum);
+ 
+    }
+ 
+ 
+}
