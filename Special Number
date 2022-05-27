@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class SpecialNums {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input = Integer.parseInt(sc.nextLine());
+
+        for (int i = 1; i <= input; i++) {
+
+            if (i == 5 || i == 7 || i == 11){
+                System.out.println(i + " -> True");
+            }
+            System.out.println(i + " -> False");
+        }
+
+
+    }
+}
