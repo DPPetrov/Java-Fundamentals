@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class MetersToKilometers {
+    static double meters;
+    static double km = 0;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        meters = Double.parseDouble(sc.nextLine());
+        km = meters / 1000;
+        System.out.printf("%.2f",km);
+    }
+}
