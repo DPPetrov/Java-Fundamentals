@@ -1,0 +1,15 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class ExactSumOfRealNums {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long input = Long.parseLong(sc.nextLine());
+        BigDecimal sum = BigDecimal.ZERO;
+        for (int i = 1; i <= input ; i++) {
+            BigDecimal newInput = new BigDecimal(sc.nextLine());
+            sum = newInput.add(newInput);
+        }
+        System.out.println(sum);
+    }
+}
