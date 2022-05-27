@@ -9,10 +9,10 @@ public class LowerToUpper {
                 'w','x','y','z'};
 
         if (input.equals(lowerCase)){
-            System.out.println("lowe case");
+            System.out.println("lower-case");
 
         }else{
-            System.out.println("upper case");
+            System.out.println("upper-case");
         }
     }
 }
