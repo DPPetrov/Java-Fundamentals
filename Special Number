@@ -9,8 +9,9 @@ public class SpecialNums {
 
             if (i == 5 || i == 7 || i == 11){
                 System.out.println(i + " -> True");
-            }
+            }else{
             System.out.println(i + " -> False");
+            }
         }
 
 
