@@ -7,7 +7,7 @@ public class SpecialNums {
 
         for (int i = 1; i <= input; i++) {
 
-            if (i == 5 || i == 7 || i == 11){
+            if (i == 5 || i == 7 || i == 14){
                 System.out.println(i + " -> True");
             }else{
             System.out.println(i + " -> False");
