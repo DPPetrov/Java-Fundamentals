@@ -4,7 +4,7 @@ public class RefractorVolume {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double length, width, height = 0;
+        double length, width, height;
 
         System.out.print("Length: ");
 
@@ -17,8 +17,9 @@ public class RefractorVolume {
         System.out.print("Height: ");
 
         height = Double.parseDouble(sc.nextLine());
+        
 
-        height = (length * length * height) / 3;
+        height = (length * width * height) / 3;
 
         System.out.printf("Pyramid Volume: %.2f", height);
     }
