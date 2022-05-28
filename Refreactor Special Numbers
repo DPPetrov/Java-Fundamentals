@@ -15,6 +15,7 @@ public class RefractorNum {
                 i = i / 10;
             }
             if (sum == 5 || sum == 7 || sum == 11) {
+                isTrue = true;
                 i = newSum;
                 System.out.printf("%d -> %b%n", newSum, isTrue);
             }
