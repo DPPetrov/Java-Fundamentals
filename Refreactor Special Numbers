@@ -6,15 +6,18 @@ public class RefractorNum {
         int input = Integer.parseInt(scanner.nextLine());
         int sum = 0;
         int newNum = 0;
-        boolean isTrue = false;
         for (int i = 1; i <= input; i++) {
             newNum = i;
             while (i > 0) {
-                sum += i % 10; i = i / 10; 
-            } 
-            isTrue = (sum == 5 || sum == 7 || sum == 11);
-            sum = 0; i = newNum;
-            System.out.printf("%d -> %b%n", newNum, isTrue);
+                sum += i % 10; i = i / 10;
+            }
+            if (sum == 5 || sum == 7 || sum == 11) {
+                sum = 0;
+                i = newNum;
+                System.out.printf("%d -> True%n", newNum);
+            }else{
+                System.out.printf("%d -> False%n", newNum);
+            }
         }
     }
 }
