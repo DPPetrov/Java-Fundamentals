@@ -1,0 +1,15 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int firstNum = Integer.parseInt(sc.nextLine());
+        int secondNum = Integer.parseInt(sc.nextLine());
+        int thirdNum = Integer.parseInt(sc.nextLine());
+        int fourthNum = Integer.parseInt(sc.nextLine());
+
+        int total = (firstNum + secondNum) / thirdNum * fourthNum;
+        System.out.println(total);
+    }
+}
