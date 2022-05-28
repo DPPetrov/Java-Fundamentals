@@ -5,20 +5,26 @@ public class RefractorNum {
         Scanner scanner = new Scanner(System.in);
         int input = Integer.parseInt(scanner.nextLine());
         int sum = 0;
-        int newNum = 0;
+        int newNum;
+        boolean isTrue;
         for (int i = 1; i <= input; i++) {
+
             newNum = i;
             while (i > 0) {
-                sum += i % 10; i = i / 10;
+                sum += i % 10;
+                i = i / 10;
             }
-            if (sum == 5 || sum == 7 || sum == 11) {
-                sum = 0;
-                i = newNum;
-                System.out.printf("%d -> True%n", newNum);
+            isTrue = (sum == 5 || sum == 7 || sum == 11);
+            sum = 0;
+            i = newNum;
+
+            if (isTrue){
+                System.out.printf("%d -> True\n", newNum);
             }else{
-                System.out.printf("%d -> False%n", newNum);
+                System.out.printf("%d -> False\n", newNum);
             }
         }
+
     }
 }
 
