@@ -7,7 +7,7 @@ public class RefractorSpecialNumbers {
 
     int sum = 0;
 
-    int takova = 0;
+    int newNum = 0;
 
     boolean toe = false;
 
@@ -15,17 +15,17 @@ public class RefractorSpecialNumbers {
 
     {
 
-        takova = ch;
+        newNum = ch;
 
         while (ch > 0) {
 
             sum += ch % 10;
             ch = ch / 10;
-            toe = (sum == 5) || (sum == 7)
-                    || (sum == 11);
-            System.out.printf("%d -> %b%n", takova, toe);
+            toe = sum == 5 || sum == 7
+                    || sum == 11;
+            System.out.printf("%d -> %b%n", newNum, toe);
             sum = 0;
-            ch = takova;
+            ch = newNum;
         }
     }
 }
