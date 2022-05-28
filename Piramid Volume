@@ -4,11 +4,11 @@ public class RefractorVolume {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double dul, sh, V = 0;
+        double length, sh, V = 0;
 
         System.out.print("Length: ");
 
-        dul = Double.parseDouble(sc.nextLine());
+        length = Double.parseDouble(sc.nextLine());
 
         System.out.print("Width: ");
 
@@ -18,7 +18,7 @@ public class RefractorVolume {
 
         V = Double.parseDouble(sc.nextLine());
 
-        V = (dul * sh * V) / 3;
+        V = (length * sh * V) / 3;
 
         System.out.printf("Pyramid Volume: %.2f", V);
     }
