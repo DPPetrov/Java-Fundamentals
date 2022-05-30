@@ -1,36 +1,38 @@
-package DataTypesAndVariablesExercise;
- 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
- 
-public class DataTypeFinder {
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+
+public class DataTypes {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         String input = "";
- 
+
         while (true){
-            input = scanner.nextLine();
- 
-            if (input.equals("END")){
+            input = sc.nextLine();
+
+            if (input.equalsIgnoreCase("end")){
                 break;
             }
             boolean isInt = true;
- 
+//Когато компилаторът върне грешка - Exception, тя има определен тип. 
+            // В случая казваме на програмата "Опитай да приемеш входни данни от тип int. Прихвани грешка от типа 
+            // NumberFormat (кръщаваме я "е", както бихме кръстили всяка друга променлива). Ако намериш такава грешка - игнорирай 
+            // я и не ми се карай с червения текст :) 
+            
             try {
-                int integer = Integer.parseInt(input);
+                //Цялата проверка правим с boolean - По подразбиране казваме, че isInt = true, но ако не е, промени я на false 
+                //и продължи да проверяваш
+                int intInput = Integer.parseInt(input);
             } catch (NumberFormatException e){
                 isInt = false;
             }
- 
+
             boolean isDouble = true;
             try {
-                double doubl = Double.parseDouble(input);
+                double doubleInput = Double.parseDouble(input);
             } catch (NumberFormatException e){
                 isDouble = false;
             }
- 
+// Горе сме въвели условията, които искаме да проверим
+            // Тук гледаме какъв е изходът и проверяваме дали отговаря на някои от условията
             if (isInt){
                 System.out.printf("%s is integer type%n",input);
             } else if (isDouble){
@@ -43,6 +45,7 @@ public class DataTypeFinder {
                 System.out.printf("%s is string type%n",input);
             }
         }
- 
+
     }
 }
+
