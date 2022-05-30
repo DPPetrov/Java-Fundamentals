@@ -6,24 +6,25 @@ public class CharacterCheck {
         int input = Integer.parseInt(sc.nextLine());
         boolean leftBracketIsFrist = false;
         boolean rightBracketIsFirst = false;
-        
+
 
         while (input > 0){
             String newInput = sc.nextLine();
                 if(newInput.equalsIgnoreCase(")")){
                     rightBracketIsFirst = true;
-                    
+
                 } else if (newInput.equalsIgnoreCase("(")) {
                     leftBracketIsFrist = true;
-                   
+
                     input--;
                 }
+                
+        }
 
-                if (rightBracketIsFirst){
-                    System.out.println("UNBALANCED");
-                } else if (leftBracketIsFrist) {
-                    System.out.println("BALANCED");
-                }
+        if (rightBracketIsFirst){
+            System.out.println("UNBALANCED");
+        } else if (leftBracketIsFrist) {
+            System.out.println("BALANCED");
         }
     }
 }
