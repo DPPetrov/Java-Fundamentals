@@ -19,7 +19,7 @@ public class CharacterCheck {
             input--;
         }
 
-        if (bracketCounter != 0 || bracketCounter != 1) {
+        if (bracketCounter != 0) {
             System.out.println("UNBALANCED");
         }else{
             System.out.println("BALANCED");
