@@ -3,33 +3,25 @@ import java.util.Scanner;
 public class CharacterCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+        int input = Integer.parseInt(sc.nextLine());
         boolean hasLeftBracket = false;
         boolean hasRightBracket = false;
 
-       while (true){
-           
-           if (input.equals('(') && input.equals(')')){
-               break;
-           }
-           
-           switch (input){
-               case "(":
-                   hasLeftBracket = true;
-                   break;
-                   
-               case ")":
-                   hasRightBracket = true;
-                   break;
-           }
-           input = sc.nextLine();
-       }
-       
+        for (int i = 1; i <= input ; i++) {
+            String newInput = sc.nextLine();
+            if (newInput.equals("(")){
+                hasLeftBracket = true;
+            }else if (newInput.equals(")")){
+                hasRightBracket = true;
+            }
+
+        }
+
        if (hasLeftBracket && hasRightBracket){
            System.out.println("BALANCED");
        } else {
            System.out.println("UNBALANCED");
-           
+
        }
     }
 }
