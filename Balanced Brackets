@@ -23,7 +23,9 @@ public class CharacterCheck {
 
         if (leftBracketCounter == rightBracketCounter){
             System.out.println("BALANCED");
-        }else{
+        }else if (rightBracketCounter > leftBracketCounter){
+            System.out.println("UNBALANCED");
+        }else if (leftBracketCounter > rightBracketCounter){
             System.out.println("UNBALANCED");
         }
 
