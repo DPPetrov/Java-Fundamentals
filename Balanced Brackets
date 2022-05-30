@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class CharacterCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        boolean hasLeftBracket = false;
+        boolean hasRightBracket = false;
+
+        while (true){
+            int newInput = Integer.parseInt(input);
+
+            if (newInput == '(' && newInput == ')'){
+                break;
+            }
+
+            if (newInput == '('){
+                hasLeftBracket = true;
+            }
+            if (newInput == ')'){
+                hasRightBracket = true;
+            }
+        }
+
+            if (hasLeftBracket && hasRightBracket){
+                System.out.println("BALANCED");
+            }else{
+                System.out.println("UNBALANCED");
+            }
+    }
+}
