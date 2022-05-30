@@ -4,25 +4,26 @@ public class CharacterCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = Integer.parseInt(sc.nextLine());
-        boolean leftBracketIsFrist = false;
-        boolean rightBracketIsFirst = false;
+        int bracketCounter = 0;
 
 
-        while (input > 0){
+        while (input > 0) {
             String newInput = sc.nextLine();
-                if(newInput.equalsIgnoreCase(")")){
-                    rightBracketIsFirst = true;
+            if (newInput.equals("(")){
 
-                } else if (newInput.equalsIgnoreCase("(")) {
-                    leftBracketIsFrist = true;
+                bracketCounter++;
+            }else if (newInput.equals(")")){
 
-                }
-                input--;
+                bracketCounter--;
+            }else if (!newInput.equalsIgnoreCase("(") && newInput.equalsIgnoreCase(")")){
+                bracketCounter--;
+            }
+            input--;
         }
 
-        if (rightBracketIsFirst){
+        if (bracketCounter != 0 ) {
             System.out.println("UNBALANCED");
-        } else if (leftBracketIsFrist) {
+        }else{
             System.out.println("BALANCED");
         }
     }
