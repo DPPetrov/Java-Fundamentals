@@ -8,16 +8,16 @@ public class CharacterCheck {
         boolean hasRightBracket = false;
 
         while (true){
-            int newInput = Integer.parseInt(input);
+            input = sc.nextLine();
 
             if (hasLeftBracket && hasRightBracket){
                 break;
             }
 
-            if (newInput == '('){
+            if (input.equals('(')){
                 hasLeftBracket = true;
             }
-            if (newInput == ')'){
+            if (input.equals(')')){
                 hasRightBracket = true;
             }
         }
