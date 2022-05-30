@@ -21,13 +21,13 @@ public class CharacterCheck {
             input--;
         }
 
-        if (leftBracketCounter == rightBracketCounter){
-            System.out.println("BALANCED");
-        }else if (rightBracketCounter > leftBracketCounter){
-            System.out.println("UNBALANCED");
-        }else if (leftBracketCounter == 0 || rightBracketCounter == 0){
-            System.out.println("UNBALANCED");
-        }
+//        if (leftBracketCounter == rightBracketCounter){
+//            System.out.println("BALANCED");
+//        }else if (rightBracketCounter > leftBracketCounter){
+//            System.out.println("UNBALANCED");
+//        }else if (leftBracketCounter == 0 || rightBracketCounter == 0){
+//            System.out.println("UNBALANCED");
+//      }
 
         }
     }
