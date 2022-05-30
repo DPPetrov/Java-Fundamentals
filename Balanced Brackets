@@ -6,16 +6,19 @@ public class CharacterCheck {
         int input = Integer.parseInt(sc.nextLine());
         boolean hasLeftBracket = false;
         boolean hasRightBracket = false;
+        int leftBracketCounter = 0;
+        int rightBracketCounter = 0;
 
         while (input > 0) {
             String newInput = sc.nextLine();
             if (newInput.equals("(")){
                 hasLeftBracket = true;
+                leftBracketCounter++;
             }else if (newInput.equals(")")){
                 hasRightBracket = true;
-                input--;
+                rightBracketCounter++;
             }
-
+            input--;
         }
 
        if (hasLeftBracket && hasRightBracket){
