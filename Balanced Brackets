@@ -10,7 +10,7 @@ public class CharacterCheck {
         while (true){
             int newInput = Integer.parseInt(input);
 
-            if (newInput == '(' && newInput == ')'){
+            if (hasLeftBracket && hasRightBracket){
                 break;
             }
 
