@@ -21,11 +21,12 @@ public class CharacterCheck {
             input--;
         }
 
-       if (hasLeftBracket && hasRightBracket){
-           System.out.println("BALANCED");
-       } else {
-           System.out.println("UNBALANCED");
+        if (leftBracketCounter == rightBracketCounter){
+            System.out.println("BALANCED");
+        }else{
+            System.out.println("UNBALANCED");
+        }
 
-       }
+        }
     }
-}
+
