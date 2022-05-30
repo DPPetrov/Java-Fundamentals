@@ -16,9 +16,8 @@ public class CharacterCheck {
                 } else if (newInput.equalsIgnoreCase("(")) {
                     leftBracketIsFrist = true;
 
-                    input--;
                 }
-                
+                input--;
         }
 
         if (rightBracketIsFirst){
