@@ -7,12 +7,13 @@ public class CharacterCheck {
         boolean hasLeftBracket = false;
         boolean hasRightBracket = false;
 
-        for (int i = 1; i <= input ; i++) {
+        while (input > 0) {
             String newInput = sc.nextLine();
             if (newInput.equals("(")){
                 hasLeftBracket = true;
             }else if (newInput.equals(")")){
                 hasRightBracket = true;
+                input--;
             }
 
         }
