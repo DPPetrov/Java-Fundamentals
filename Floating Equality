@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class FloatingEquality {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int input = Integer.parseInt(sc.nextLine());
-        double eps = 0.000001;
-        double n1 = 0.0;
-        double n2 = 0.0;
 
-         while (input > 0) {
+        double eps = 0.000001;
+        double n1 ;
+        double n2 ;
+
+        // while (true) {
         n1 = Double.parseDouble(sc.nextLine());
+
         n2 = Double.parseDouble(sc.nextLine());
         boolean isEqual = Math.abs(n1 - n2) < eps;
 
@@ -20,8 +21,8 @@ public class FloatingEquality {
         else
         {
             System.out.println("False");
-        }
-        input--;
+       // }
+            
          }
     }
 
