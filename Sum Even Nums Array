@@ -7,7 +7,7 @@ public class PrintReverseNums {
         for (int i = 0; i < n.length; i++) {
             n[i] = Integer.parseInt(sc.nextLine());
                 }
-                for (int i = n.length - 1; i >= 0; i--) {
+                for (int i : nums) {
                     System.out.print(n[i] + " ");
                     }
                 
