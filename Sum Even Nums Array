@@ -6,8 +6,11 @@ public class PrintReverseNums {
                 int[] nums = Arrays.stream(sc.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
                 int sum = 0;
                 for (int i : nums) {
-                    
+                        if (i % 2 == 0){
+                        sum += i;
                     }
+                    
+                    System.out.println(sum);
                 
     }
 }
