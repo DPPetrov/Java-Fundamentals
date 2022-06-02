@@ -6,7 +6,7 @@ public class PrintReverseNums {
                 int[] nums = Arrays.stream(sc.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
         
                 for (int i : nums) {
-                    System.out.print(n[i] + " ");
+                    
                     }
                 
     }
