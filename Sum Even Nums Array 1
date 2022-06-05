@@ -3,17 +3,18 @@ import java.util.Scanner;
 public class SumEvenNumsArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int input = Integer.parseInt(sc.next());
-        int [] numbersArray = new int [input];
+        int n = Integer.parseInt(sc.nextLine());
+        int [] numbers = new int[n];
         int sum = 0;
 
-            for (int i = 0; i < numbersArray.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = sc.nextInt();
 
-                if (i % 2 == 0){
-                    sum += i;
+            if (numbers[i] % 2 == 0){
+                sum += numbers[i];
             }
-
-                System.out.println(sum);
         }
+
+        System.out.println(sum);
     }
 }
