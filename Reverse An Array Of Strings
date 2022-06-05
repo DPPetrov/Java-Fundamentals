@@ -6,12 +6,15 @@ public class ReverseStringsArray {
         Scanner sc = new Scanner(System.in);
         String [] input = sc.nextLine().split(" ");
 
-            for (int i = 0; i < input.length; i++) {
-                String newElement = input[i];
-                input[i] = input[input.length -1 - i];
-                input[input.length - 1] = newElement;
+            for (int i = 0; i < input.length / 2; i++) {
+                String oldElement = input[i];
+                input[i] = input[input.length - 1 - i];
+                input[input.length - 1 - i] = oldElement;
         }
 
-        System.out.println(String.join(" ", input));
+        System.out.println(String.join(" ", input)); //Използваме методът String.join(" ", input) / задаваме по
+        //какво ще ги събираме - в случая по празно място (обратно на split) и, откъде ще намерим елементи за събиране
+
+
     }
 }
