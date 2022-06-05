@@ -1,13 +1,21 @@
+
 import java.util.Scanner;
 
 public class NumsReverse {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = Integer.parseInt(sc.nextLine());
-        int [] numsArray = new int[input];
-        
+
+        int [] numsArray = new int[input]; // масивът ще има толкова елементи, колкото сме му задали от конзолата.
+
         for (int i = 0; i < numsArray.length; i++) {
+               numsArray[i] = Integer.parseInt(sc.nextLine()); //пълним масива
 
         }
+        for (int i = numsArray.length -1; i >= 0 ; i--) {
+            System.out.println(numsArray[i] + " ");
+
+        }
+
     }
 }
