@@ -12,7 +12,7 @@ public class NumsReverse {
                numsArray[i] = Integer.parseInt(sc.nextLine()); //пълним масива с въведени стойности от конзолата
 
         }
-        for (int i = numsArray.length -1; i >= 0 ; i--) {
+        for (int i = numsArray.length -1; i >= 0 ; i--) { // След като сме получили дължината и съдържанието на масива, го обръщаме и отпечатваме стойностите му на нов ред
             System.out.println(numsArray[i] + " ");
 
         }
