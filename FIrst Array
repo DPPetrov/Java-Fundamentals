@@ -1,11 +1,16 @@
 package com.company;
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         int[] numbers = new int[10]; // създай ми масив с памет за 10 елементс
-        numbers[0] = 10; //елемтнът на позиция 0 има стойност 10;
-        numbers[1] = 20;
-        numbers[2] = 30;
+        numbers[0] = Integer.parseInt(sc.nextLine()); //елемтнът на позиция 0 има стойност, зададена от конзолата;
+        numbers[1] = Integer.parseInt(sc.nextLine());
+        numbers[2] =Integer.parseInt(sc.nextLine());
         //System.out.println(numbers[2]); // отпечатва отделен елемент
         //System.out.println(numbers); -> отпечатваме дължината на масива - колко елемента има в масива
         //отпечатва колкото елемента има в масива
@@ -14,7 +19,8 @@ public class Main {
             // а в масивите те започват от позиция 0.
             //при обхождане на масиви, не трябва да пишем <=, защото ще върне грешка поради излизане от границите на
             //масива. [0] = 10; [1] = 20; [2] = 30; Ако i се увеличи и стане 3, ще върне false и ще напусне трялото на масива
-
+            int currentNum = numbers[i];
+            System.out.println(currentNum * 10);
 
         }
     }
