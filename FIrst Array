@@ -8,6 +8,7 @@ public class Main {
         numbers[2] = 30;
         //System.out.println(numbers[2]); // отпечатва отделен елемент
         System.out.println(numbers.length); // отпечатваме дължината на масива - колко елемента има в масива
+        //отпечатва колкото елемента има в масива
 
     }
 }
