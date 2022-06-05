@@ -1,0 +1,11 @@
+package com.company;
+public class Main {
+
+    public static void main(String[] args) {
+        int[] numbers = new int[10]; // създай ми масив с памет за 10 елементс
+        numbers[0] = 10; //елемтнът на позиция 0 има стойност 10;
+
+        System.out.println();
+
+    }
+}
