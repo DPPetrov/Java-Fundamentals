@@ -12,9 +12,10 @@ public class SumEvenNumsArray {
                                     .mapToInt(Integer::parseInt) // понеже са String ги превръщаме в Integer
                                         .toArray(); // и ги поставяме в масаив
                     int sum = 0;
-        for (int i: nums) {
-                if(i % 2 == 0){
-                    sum += i;
+        for (int i = 0; i < nums.length ; i++) {
+            int currentNum = nums[i];
+                if (currentNum % 2 == 0){
+                    sum += currentNum;
                 }
         }
 
