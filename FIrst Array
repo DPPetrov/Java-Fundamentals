@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] numbers = new int[10]; // създай ми масив с памет за 10 елементс
+        int[] numbers = new int[3]; // създай ми масив с памет за 10 елементс
         numbers[0] = Integer.parseInt(sc.nextLine()); //елемтнът на позиция 0 има стойност, зададена от конзолата;
         numbers[1] = Integer.parseInt(sc.nextLine());
         numbers[2] =Integer.parseInt(sc.nextLine());
