@@ -6,6 +6,7 @@ public class EqualArrays {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
        int sum = 0;
+       boolean areNotIdentical = false;
 
         int[] array1 = Arrays
                 .stream(input.split(" "))
