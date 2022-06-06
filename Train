@@ -4,13 +4,21 @@ public class Train {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = Integer.parseInt(sc.nextLine());
+        int[] passengersOutput = new int[0];
         int sum = 0;
 
-        for (int i = 0; i <= input ; i++) {
-            input = Integer.parseInt(sc.nextLine());
-                int[]passangers = new int[input];
-                
-            sum += passangers;
+        while (input > 0){
+            int newInput = Integer.parseInt(sc.nextLine());
+            int[] passangers = new int[newInput];
+            
+            for (int i = 0; i < passangers.length ; i++) {
+                sum += passangers[i];
+
+            }
+            input--;
         }
+
+        System.out.printf("%d ",passengersOutput[0]);
+        System.out.println(sum);
     }
 }
