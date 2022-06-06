@@ -26,7 +26,7 @@ public class EqualArrays {
             }
         }
 
-        if (array1 == array2){
+        if (){
             System.out.printf("Arrays are identical. Sum: %d", sum);
         }
     }
