@@ -21,6 +21,6 @@ public class CondenseArrayToNumber {
 
        }
 
-
+                System.out.println(numbers[0]);
     }
 }
