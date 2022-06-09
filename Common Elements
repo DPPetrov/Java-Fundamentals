@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+ 
+public class Demo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); //sc
+ 
+        String firstRow = scanner.nextLine(); //"Hey hello 2 4".split(" ") -> ["Hey", "hello", "2", "4"]
+        String secondRow = scanner.nextLine(); //"10 hey 4 hello".split(" ") -> ["10", "hey", "4", "hello"]
+ 
+        String[] firstArray = firstRow.split(" ");
+        String[] secondArray = secondRow.split(" ");
+ 
+        //обхождаме всеки елемент във втория масив
+        for (String secondElement : secondArray) {
+            //какво повтаряме за всеки елемент от втория масив: обхождаме първия масив
+            for (String firstElement : firstArray) {
+                if (firstElement.equals(secondElement)) {
+                    System.out.print(firstElement + " ");
+                    break;
+                }
+            }
+        }
+    }
+}
