@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class SignOfInteger {
+    static int input;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         input = Integer.parseInt(sc.nextLine());
+
+        if (input < 0){
+            negativeInteger();
+        }else if (input > 0){
+            positiveInteger();
+        }else {
+            zero();
+        }
+    }
+
+    public static void negativeInteger(){
+        System.out.printf("The number %d is negative.", input);
+    }
+
+    public static void positiveInteger(){
+        System.out.printf("The number %d is positive.", input);
+    }
+
+    public static void zero (){
+        System.out.printf("The number %d is zero.", input);
+    }
+}
