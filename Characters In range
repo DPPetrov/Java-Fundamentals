@@ -30,5 +30,6 @@ public class CharactersInBetween {
         
         public static void printChars1 (int a, int b){
             for (int i = b; i <= a ; i++) {
+            String convertedChars = Character.toString(i);
         }
 }
