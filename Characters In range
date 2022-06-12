@@ -4,18 +4,16 @@ import java.util.Scanner;
 public class CharactersInBetween {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        char char1 = sc.nextLine().charAt(0); // С "charAt(0), се чете char от конзолата.
-        int converted1 = (int)char1; // Тук каствам (преобразувам) символ в числена стойност.
+        char char1 = sc.nextLine().charAt(0);
+        int converted1 = (int)char1;
         char char2 = sc.nextLine().charAt(0);
         int converted2 = (int)char2;
 
 
         //Взимам инпут, който е char
-        //Конвертирам този инпут в int, за да му вземем ASCII стойността
+        //Конвертирам този инпут в int
         //Сравнявам двата инпута и определяме по-малкия
         //Правим for-цикъл, с който определям, откъде започва процеса
-        //Създавам два метода (за упражнение), които принтират символите на стойностите, които всъщност сравнява.
-        
         if (converted1 < converted2){
             printChars(converted1, converted2);
         }else{
@@ -29,9 +27,14 @@ public class CharactersInBetween {
                 System.out.print(convertedChars + " ");
             }
         }
-        
-        for (int i = b+1; i < a ; i++) {
+
+        public static void printChars1 (int a, int b){
+
+            for (int i= b +1; i < a ; i++) { // добавям +1 към а и б, защото искаме да се принтират стойности между
+                //двата инпута. За тази цел трябва да започнем от следващия символ от реда (ако започват от А, сега ще 
+                //започват от Б и т.н
                 String convertedChars = Character.toString(i);
-                System.out.print(convertedChars + " ");
+                System.out.print(convertedChars +" ");
             }
+        }
 }
