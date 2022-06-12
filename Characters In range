@@ -25,7 +25,7 @@ public class CharactersInBetween {
 
         public static void printChars(int a, int b){
             for (int i = a; i <= b ; i++) {
-                    String convertedChars = Character.toString(i).charAt(0);
+                    String convertedChars = Character.toString(i);
                 System.out.print(convertedChars + " ");
             }
         }
