@@ -9,7 +9,7 @@ public class CharactersInBetween {
         char char2 = sc.nextLine().charAt(0);
         int converted2 = (int)char2;
 
-       
+
         //Взимам инпут, който е char
         //Конвертирам този инпут в int
         //Сравнявам двата инпута и определяме по-малкия
@@ -17,12 +17,18 @@ public class CharactersInBetween {
         if (converted1 < converted2){
             printChars(converted1, converted2);
         }else{
-            printChars1(converted1, converted2)
+            printChars1(converted1, converted2);
         }
     }
 
         public static void printChars(int a, int b){
+            for (int i = a; i <= b ; i++) {
+                    String convertedChars = Character.toString(i);
+                System.out.print(i + " ");
+            }
+        }
+        
+        public static void printChars1 (int a, int b){
         
         }
-
 }
