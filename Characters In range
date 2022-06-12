@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class CharactersInBetween {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        char char1 = sc.nextLine().charAt(0);
-        int converted1 = (int)char1;
+        char char1 = sc.nextLine().charAt(0); // С "charAt(0), се чете char от конзолата.
+        int converted1 = (int)char1; // Тук каствам (преобразувам) символ в числена стойност.
         char char2 = sc.nextLine().charAt(0);
         int converted2 = (int)char2;
 
