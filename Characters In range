@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+
+public class CharactersInBetween {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char char1 = sc.nextLine().charAt(0);
+        int converted1 = (int)char1;
+        char char2 = sc.nextLine().charAt(0);
+        int converted2 = (int)char2;
+
+       
+        //Взимам инпут, който е char
+        //Конвертирам този инпут в int
+        //Сравнявам двата инпута и определяме по-малкия
+        //Правим for-цикъл, с който определям, откъде започва процеса
+        if (converted1 < converted2){
+            printChars(converted1, converted2);
+        }else{
+            printChars1(converted1, converted2)
+        }
+    }
+
+        public static void printChars(int a, int b){
+        
+        }
+
+}
