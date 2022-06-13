@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class VowelsCount1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine().toLowerCase();
+        vowelsCount(input);
+    }
+
+    public static void vowelsCount(String input){
+        int vowelsCounter = 0;
+        for (int i = 0; i < input.length() ; i++) {
+
+            char[] vowels = input.toCharArray();
+            if (vowels.equals('a') || vowels.equals('e') || vowels.equals('u')
+            || vowels.equals('o') || vowels.equals('i')){
+                vowelsCounter++;
+            }
+        }
+        System.out.println(vowelsCounter);
+    }
+}
