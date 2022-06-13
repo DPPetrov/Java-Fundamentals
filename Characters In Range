@@ -14,14 +14,9 @@ public class CharactersInRange1 {
          newSymbol1 = input1;
         int newSymbol2 = 0;
         newSymbol2 = input2;
-//        char newChar1 = (char) newSymbol1;
-//        char newChar2 = (char) newSymbol2;
+        char newChar1 = (char) newSymbol1;
+        char newChar2 = (char) newSymbol2;
 
-       if (newSymbol1 > newSymbol2){
-           for (int i = newSymbol1 + 1; i < newSymbol2; i++) {
-                
-               char newChar1 = (char) i;
-           }
-       }
+        System.out.print(newSymbol1 + " " + newSymbol2);
     }
 }
