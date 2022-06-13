@@ -17,7 +17,7 @@ public class CharactersInRange1 {
 
        if (newSymbol1 > newSymbol2){
            for (int i = newSymbol1 + 1; i < newSymbol2; i++) {
-               char newChar1 = (char) newSymbol1;
+               char newChar1 = (char) i;
                char newChar2 = (char) newSymbol2;
                System.out.print();
            }
