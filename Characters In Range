@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class CharactersInRange1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char input1 = sc.nextLine().charAt(0);
+        char input2 = sc.nextLine().charAt(0);
+
+        symbolRange(input1, input2);
+    }
+
+    public static void symbolRange(char input1, char input2){
+        int newSymbol1 = 0;
+         newSymbol1 = input1;
+        int newSymbol2 = 0;
+        newSymbol2 = input2;
+
+        for (int i = newSymbol1 +1 ; i < newSymbol2 ; i++) {
+            System.out.print(i + " ");
+        }
+    }
+}
