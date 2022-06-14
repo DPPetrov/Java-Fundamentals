@@ -9,7 +9,7 @@ public class CharactersInRange1 {
         int converted1 =  input1;
         int converted2 =  input2;
 
-        if (converted1 > converted2){
+        if (converted1 < converted2){
             printChars1(converted1, converted2);
         }else{
             printChars2(converted1, converted2);
