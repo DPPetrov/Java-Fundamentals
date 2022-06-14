@@ -26,7 +26,7 @@ public class CharactersInRange1 {
     }
 
     public static void printChars2 (int c, int d){
-        for (int i = d-1; i > c; i--) {
+        for (int i = d+1; i < c; i++) {
             String printSymbol = Character.toString(i);
             System.out.print(printSymbol + " ");
         }
