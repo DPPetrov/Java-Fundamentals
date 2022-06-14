@@ -6,14 +6,30 @@ public class CharactersInRange1 {
         char input1 = sc.nextLine().charAt(0);
         char input2 = sc.nextLine().charAt(0);
 
-        symbolRange(input1, input2);
+        int converted1 =  input1;
+        int converted2 =  input2;
+
+        if (converted1 > converted2){
+            printChars1(converted1, converted2);
+        }else{
+            printChars2(converted1, converted2);
+        }
+
     }
 
-    public static void symbolRange(char input1, char input2){
-        int newSymbol1 = 0;
-         newSymbol1 = input1;
-        int newSymbol2 = 0;
-        newSymbol2 = input2;
-       
+
+    public static void printChars1(int a, int b){
+        for (int i = a + 1; i < b; i++) {
+            String printSymbol = Character.toString(i);
+            System.out.print(printSymbol + " ");
+        }
+    }
+
+    public static void printChars2 (int a, int b){
+        for (int i = a +1; i < b ; i++) {
+            String printSymbol = Character.toString(i);
+            System.out.print(printSymbol + " ");
+        }
     }
 }
+
