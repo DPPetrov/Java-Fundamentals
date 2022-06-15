@@ -18,7 +18,7 @@ public class ComputerStore {
                                  }
                                     sum += price;// price without tax
                                         tax += price * 0.2; // tax only
-                                            price = Double.parseDouble(input);
+                                            input = sc.nextLine();
                             }
 
             totalPrice += sum + sum * 0.2; // total amount with tax
