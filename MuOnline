@@ -5,15 +5,25 @@ public class MuOnline {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String command = sc.next();
+        int value = Integer.parseInt(sc.next());
+        String separator = sc.next();
         int health = 100;
         int money = 0;
         int roomCount = 0;
 
         //правим 4 метода, които отговарят на действията - heal, loot, combat, isAlive
-        isAlive(health);
+
     }
-    
-    public static boolean isAlive(int health){
+
+    public static boolean isAlive( int health){
         return health > 0;
+    }
+
+    public static void loot (String chest, int bitcoin){
+        if (chest.equals("chest")){
+            System.out.printf("You found %d bitcoins", bitcoin);
+             bitcoin = money;
+        }
+
     }
 }
