@@ -4,7 +4,7 @@ public class MuOnline {
     static Scanner sc = new Scanner(System.in);
     static String command = sc.next().toLowerCase();
     static int value = Integer.parseInt(sc.next());
-    static String separator = sc.next();
+  //  static String separator = sc.next();
     static int health = 100;
     static int money = 0;
     static int roomCount = 0;
@@ -39,7 +39,7 @@ public class MuOnline {
             System.out.println("You died! Killed by " + command + ".");
             System.out.println("Best room: " + roomCount);
         }
-        
+
     }
 
         public static void heal (){
@@ -48,6 +48,8 @@ public class MuOnline {
             health = 100;
         }
     }
-    
-    
+
+    public static void loot (){
+        money += value;
+    }
 }
