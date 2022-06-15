@@ -12,7 +12,7 @@ public class ComputerStore {
                 if (input.equals("regular") || input.equals("special")){
                     break;
                 }
-                        double price = Double.parseDouble(sc.nextLine());
+                        double price = Double.parseDouble(input);
 
                             if (price < 0){
                                 System.out.println("Invalid price!");
