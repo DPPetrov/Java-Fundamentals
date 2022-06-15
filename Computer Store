@@ -32,10 +32,11 @@ public class ComputerStore {
             }
         }
 
-        System.out.printf("Congratulations you've just bought a new computer!\n " +
-                        "Price without taxes: {total price without taxes}$\n " +
-                        "Taxes: {total amount of taxes}$\n" +
-                        "-----------\n" +
-                        "Total price: {total price with taxes}$");
+        System.out.printf("""
+                Congratulations you've just bought a new computer!
+                 Price without taxes: %.2f$
+                 Taxes: %.2f$
+                -----------
+                Total price: %.2f$""", sum, tax, totalPrice);
     }
 }
