@@ -37,6 +37,7 @@ public class MuOnline {
             System.out.println("You slayed " + command + ".");
         }else{
             System.out.println("You died! Killed by " + command + ".");
+            System.out.println("Best room: " + roomCount);
         }
     }
 
