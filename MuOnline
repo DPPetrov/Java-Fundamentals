@@ -1,29 +1,48 @@
 import java.util.Scanner;
 
 public class MuOnline {
+    static Scanner sc = new Scanner(System.in);
+    static String command = sc.next().toLowerCase();
+    static int value = Integer.parseInt(sc.next());
+    static String separator = sc.next();
+    static int health = 100;
+    static int money = 0;
+    static int roomCount = 0;
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String command = sc.next();
-        int value = Integer.parseInt(sc.next());
-        String separator = sc.next();
-        int health = 100;
-        int money = 0;
-        int roomCount = 0;
 
         //правим 4 метода, които отговарят на действията - heal, loot, combat, isAlive
 
-    }
-
-    public static boolean isAlive( int health){
-        return health > 0;
-    }
-
-    public static void loot (String chest, int bitcoin){
-        if (chest.equals("chest")){
-            System.out.printf("You found %d bitcoins", bitcoin);
-             bitcoin = money;
+        if (!command.equals("potion") && !command.equals("chest")){
+            combat();
+        }else if (command.equals("potion")){
+            heal();
+        }else if (command.equals("chest")){
+            loot();
         }
 
     }
+
+    public static void combat(){
+        health -= value;
+
+        if (health > 0){
+            roomCount++;
+            if (command.equals("boss")){
+                System.out.printf("You've made it!\n" +
+                        "Bitcoins: %d\n" +
+                        "Health: %d\n", money, health);
+                System.exit(0);
+            }
+            System.out.println("You slayed " + command + ".");
+        }else{
+            System.out.println("You died! Killed by " + command + ".");
+        }
+    }
+
+
+
+
+
+
 }
