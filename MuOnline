@@ -10,7 +10,7 @@ public class MuOnline {
     static int roomCount = 0;
 
     public static void main(String[] args) {
-
+            //Опитвам while цикъл, който да приема друг инпут, ако commant != |
         //правим 4 метода, които отговарят на действията - heal, loot, combat, isAlive
 
         if (!command.equals("potion") && !command.equals("chest")){
