@@ -26,22 +26,28 @@ public class ComputerStore {
             }
 
             totalPrice += sum + sum * 0.2; // total amount with tax
-        
+
         if (totalPrice == 0){
             System.out.println("Invalid order!");
-        }
-
-        if (input.equals("special")){
+        }else if (input.equals("special")){
             totalPrice -= totalPrice * 0.1;
-        }
-
-        
-
-        System.out.printf("""
+            System.out.printf("""
                 Congratulations you've just bought a new computer!
                  Price without taxes: %.2f$
                  Taxes: %.2f$
                 -----------
                 Total price: %.2f$""", sum, tax, totalPrice);
+        } else if (input.equals("regular")) {
+
+            System.out.printf("""
+                Congratulations you've just bought a new computer!
+                 Price without taxes: %.2f$
+                 Taxes: %.2f$
+                -----------
+                Total price: %.2f$""", sum, tax, totalPrice);
+
+        }
+
+
     }
 }
