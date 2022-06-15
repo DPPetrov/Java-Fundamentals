@@ -39,11 +39,15 @@ public class MuOnline {
             System.out.println("You died! Killed by " + command + ".");
             System.out.println("Best room: " + roomCount);
         }
+        
     }
 
-
-
-
-
-
+        public static void heal (){
+        health += value;
+        if (health > 100){
+            health = 100;
+        }
+    }
+    
+    
 }
