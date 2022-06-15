@@ -31,20 +31,18 @@ public class ComputerStore {
             System.out.println("Invalid order!");
         }else if (input.equals("special")){
             totalPrice -= totalPrice * 0.1;
-            System.out.printf("""
-                Congratulations you've just bought a new computer!
-                 Price without taxes: %.2f$
-                 Taxes: %.2f$
-                -----------
-                Total price: %.2f$""", sum, tax, totalPrice);
+            System.out.printf("ongratulations you've just bought a new computer!\n" +
+                    "Price without taxes: %.2f$\n" +
+                    "Taxes: %.2f$\n" +
+                    "-----------\n" +
+                    "Total price: %.2f$", sum, tax, totalPrice);
         } else if (input.equals("regular")) {
 
-            System.out.printf("""
-                Congratulations you've just bought a new computer!
-                 Price without taxes: %.2f$
-                 Taxes: %.2f$
-                -----------
-                Total price: %.2f$""", sum, tax, totalPrice);
+            System.out.printf("ongratulations you've just bought a new computer!\n" +
+                            "Price without taxes: %.2f$\n" +
+                    "Taxes: %.2f$\n" +
+                    "-----------\n" +
+                    "Total price: %.2f$", sum, tax, totalPrice);
 
         }
 
