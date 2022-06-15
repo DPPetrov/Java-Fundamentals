@@ -15,6 +15,7 @@ public class ComputerStore {
                             if (price < 0){
                                 System.out.println("Invalid price!");
                                 sum -= price;
+                                tax -= price * 0.2;
                                    price = Double.parseDouble(input);
                                  }
                                     sum += price;// price without tax
