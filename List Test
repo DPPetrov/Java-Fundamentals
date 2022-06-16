@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListTest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        List<String> namesList = new ArrayList<>();
+
+        while (!input.equals("end")) {
+            namesList.add(input);
+            System.out.println(namesList);
+            input = sc.nextLine();
+        }
+    }
+}
