@@ -6,5 +6,9 @@ public class DaysOFTheWeek {
         int day = Integer.parseInt(sc.nextLine);
         String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Sunday"};
         
+        if (day >= 1 && day <= 7){
+        
+        }
+        
     }
 }
