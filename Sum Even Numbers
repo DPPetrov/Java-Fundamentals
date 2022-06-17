@@ -10,9 +10,11 @@ public class ReadEvenNumbers {
                 .toArray();
         int sum = 0;
 
-        for (int i = 0; i <= nums.length; i++) {
-            if (i % 2 == 0){
-                sum += i;
+        for (int element: Arrays.stream(nums).toArray()) {
+            if (element % 2 == 0){
+                sum += element;
+            }else{
+                sum = 0;
             }
         }
 
