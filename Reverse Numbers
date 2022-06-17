@@ -7,11 +7,12 @@ public class PrintNumsInReverse {
         int[] nums = new int[input];
 
         while (input > 0){
-            input = Integer.parseInt(sc.nextLine());
-
+            int newInput = Integer.parseInt(sc.nextLine());
+            
             for (int i = nums[input]; i > 0 ; i--) {
                 System.out.print(i + " ");
             }
+
             input--;
         }
     }
