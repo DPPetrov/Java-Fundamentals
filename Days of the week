@@ -4,6 +4,7 @@ public class DaysOFTheWeek {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int day = Integer.parseInt(sc.nextLine);
+        String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday",
         
     }
 }
