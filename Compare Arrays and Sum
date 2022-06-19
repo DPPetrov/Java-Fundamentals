@@ -30,7 +30,7 @@ public class IdenticalArrays {
                 }else{
                     equalCount++;
                     if (equalCount == maxLength) {
-                        System.out.println("Arrays are identical! Sum: " + sum);
+                        System.out.println("Arrays are identical. Sum: " + sum);
                     }
                 }
 
