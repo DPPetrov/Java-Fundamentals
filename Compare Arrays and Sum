@@ -15,22 +15,19 @@ public class IdenticalArrays {
                 .toArray();
 
         int sum = 0;
+        int maxLength = arrOne.length + arrTwo.length;
 
-        for (int i = 0; i < arrOne.length; i++) {
-            
-            for (int j = 0; j < arrTwo.length; j++) {
-
-                if (arrOne[i] !=arrTwo[j]) {
-                    System.out.println("Arrays are not identical! Found difference at index " + arrOne[i]);
+        for (int i = 0; i < maxLength ; i++) {
+            sum += arrOne[i];
+                if (arrOne[i] != arrTwo[i]){
+                    System.out.println("Arrays are not identical! Found difference at " + i + " index");
                     break;
                 }else{
-                    sum += arrOne[i];
                     System.out.println("Arrays are identical! Sum: " + sum);
                 }
-            }
-
-            
         }
+
+
 
     }
 }
