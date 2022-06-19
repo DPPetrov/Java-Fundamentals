@@ -15,19 +15,26 @@ public class IdenticalArrays {
                 .toArray();
 
         int sum = 0;
-        int maxLength = arrOne.length + arrTwo.length;
+        int equalCount = 0;
+        int maxLength =0;
+        
+        if (arrOne.length == arrTwo.length){
+            maxLength = arrOne.length;
+        }
 
         for (int i = 0; i < maxLength ; i++) {
             sum += arrOne[i];
                 if (arrOne[i] != arrTwo[i]){
-                    System.out.println("Arrays are not identical! Found difference at " + i + " index");
+                    System.out.printf("Arrays are not identical! Found difference at %d index", i);
                     break;
                 }else{
-                    System.out.println("Arrays are identical! Sum: " + sum);
+                    equalCount++;
+                    if (equalCount == maxLength) {
+                        System.out.println("Arrays are identical! Sum: " + sum);
+                    }
                 }
+
         }
-
-
 
     }
 }
