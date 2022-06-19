@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CommonElements {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input1 = sc.nextLine();
+        String input2 = sc.nextLine();
+
+        String[] firstArr = input1.split(" ");
+        String[] secondArr = input2.split(" ");
+
+        for (String secondElement : secondArr){
+            for(String firstElement : firstArr){
+                if (firstElement.equals(secondElement)){
+                    System.out.print(firstElement + " ");
+                }
+            }
+        }
+    }
+}
