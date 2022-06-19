@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class EvenAndOddSUbstraction {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sumOdd = 0;
+        int sumEven = 0;
+
+        int[] inputArr = Arrays.stream(sc.nextLine().split(" "))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+        for (int element : inputArr) {
+            if (element % 2 == 0){
+                sumEven += element;
+        }else{
+                sumOdd += element;
+            }
+
+        }
+        System.out.println(sumEven - sumOdd);
+    }
+}
