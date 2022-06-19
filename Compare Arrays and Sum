@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class IdenticalArrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] arrOne = Arrays.stream(sc.nextLine(). split(" "))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+
+        int[] arrTwo = Arrays.stream((sc.nextLine().split(" ")))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+        int sum = 0;
+
+        for (int i = 0; i < arrOne.length; i++) {
+            
+            for (int j = 0; j < arrTwo.length; j++) {
+
+                if (arrOne[i] !=arrTwo[j]) {
+                    System.out.println("Arrays are not identical! Found difference at index " + arrOne[i]);
+                    break;
+                }else{
+                    sum += arrOne[i];
+                    System.out.println("Arrays are identical! Sum: " + sum);
+                }
+            }
+
+            
+        }
+
+    }
+}
