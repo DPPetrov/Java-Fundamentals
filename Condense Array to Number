@@ -24,6 +24,6 @@ public class CondenseArraysToNums {
 
         }
 
-        System.out.println(numbers[0]);
+        System.out.println(numbers[0]);//Понеже вече масивът ни е намалял до 1 елемент, който се намира на позиция 0.
     }
 }
