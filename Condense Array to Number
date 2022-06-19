@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CondenseArrayToNumber {
+public class CondenseArraysToNums {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,17 +10,20 @@ public class CondenseArrayToNumber {
                 .mapToInt(Integer :: parseInt)
                 .toArray();
 
-       while (numbers.length > 1){
+        while (numbers.length > 1){
 
-           int[] condensed = new int[numbers.length - 1];
-           for (int i = 0; i < condensed.length ; i++) {
-               condensed[i] += numbers[i] + numbers[i+1];
+            int[] condensed = new int[numbers.length - 1]; //Създаваме нов масив, който е с размер и стойност на първия масив
+            for (int i = 0; i < condensed.length ; i++) { // наливаме масива
+                condensed[i] += numbers[i] + numbers[i+1]; // в condensed се съхраняват стойностите на обходения масив и целият масив постепенно намаля
+                //в index i, защото след сумиране старите стойности изчезват след събирането им и се заменят от новите
 
-           }
-           numbers = condensed;
+            }
+            numbers = condensed;
+            // за да намалее масива numbers и респективно, да намелее размерът му, оеднаквяваме стойностите
+            //на двата масива. Сега numbers няма оригиналната си стойност, а събраната
 
-       }
+        }
 
-                System.out.println(numbers[0]);
+        System.out.println(numbers[0]);
     }
 }
