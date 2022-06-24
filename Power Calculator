@@ -1,0 +1,7 @@
+//Create a function that takes voltage and current and returns the calculated power.
+
+public class Circuit {
+	public static int power(int voltage, int current) {
+		return (voltage * current);
+	}
+}
