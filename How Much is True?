@@ -6,7 +6,7 @@ public class Challenge {
 	public static int countTrue(boolean[] arr) {
 		int count = 0;
 		for (boolean el : arr){
-			if (el = true){
+			if (el == true){
 				count++;
 			}
 		}
