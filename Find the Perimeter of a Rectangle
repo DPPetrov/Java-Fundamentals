@@ -1,0 +1,7 @@
+//Create a function that takes length and width and finds the perimeter of a rectangle.
+
+public class Challenge {
+	public static int findPerimeter(int length, int width) {
+		return ((length + width) * 2);
+  }
+}
