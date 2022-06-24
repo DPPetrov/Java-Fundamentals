@@ -1,0 +1,15 @@
+Create a method that accepts an array and returns the last item in the array.
+
+Examples
+getLastItem([1, 2, 3]) ➞ 3
+
+getLastItem([0]) ➞ 0
+
+getLastItem([-1, -3]) ➞ -3
+===============================
+
+public class Program {
+    public static int getLastItem(int[] nums) {
+      return nums[nums.length -1];
+    }
+}
