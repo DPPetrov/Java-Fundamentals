@@ -7,10 +7,9 @@ public class Challenge {
 		int count = 0;
 		for (boolean el : arr){
 			if (el = true){
+				count++;
 			}
-      return count;
 		}
-		
 		return count;
 	}
 }
