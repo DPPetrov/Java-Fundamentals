@@ -1,0 +1,8 @@
+//Given two arguments, return an array which contains these two arguments.
+
+
+public class Pairs {
+	public static int[] makePair(int a, int b) {
+		return new int[] {a, b};
+	}
+}
