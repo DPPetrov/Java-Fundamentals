@@ -5,7 +5,7 @@ public class ExistsANumberHigher {
 		boolean isTrue = false;
 		
 		for (int el : arr){
-			if (el == n){
+			if (el >= n){
 				isTrue = true;
 			}
 		}
