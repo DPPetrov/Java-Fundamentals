@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class RemoveNegativesAndReverse {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        List<Integer> numsList = Arrays.stream(sc.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+
+        for (int i = 0; i < numsList.size(); i++) {
+
+            if (numsList.get(i) < 0){
+                numsList.remove(i--);
+            }
+
+            if (numsList.size() == 0){
+                System.out.println("empty");
+                break;
+            }
+        }
+
+        Collections.reverse(numsList);
+        for (int el : numsList){
+            System.out.print(el + " ");
+        }
+    }
+}
