@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class StringMultiplier {
+
+    public static long sumWords (String firstWord, String secondWord){ //създаваме метод, койото приема два Стринга за аргументи
+        char[] word1 = firstWord.toCharArray(); //Обръщаме първата дума от Мейн метода в масив от символи
+        char[] word2 = secondWord.toCharArray(); //Обръщаме втората дума в масив от символи
+
+        int minValue = Math.min(word1.length, word2.length); //определяме, кой е по-къс 
+        int maxValue = Math.max(word1.length, word2.length); //определяме, койт е по-дълъг
+
+        long result = 0; // променлива, в която ще съхраняваме резултата
+
+        for (int i = 0; i < minValue; i++) { //с този цикъл ще смятаме сумата, докато не се изчерпа по-късата дума, 
+            // за да остане разликата от неизползваните символи от по-дългата ("G e o r g e - P e t e r = "e" - това 
+            // остава от по-дългата дума и ще трябва да го добавим към крайния резултат")
+            
+            result += (long) word1[i] * word2[i]; // пресмятаме произведението от ASII стойностите на символите на позиция i
+
+        }
+
+        if (maxValue == word1.length){ //казваме "Ако по-дългата дума е word1
+            for (int j = minValue; j < maxValue; j++) {
+                //започваме от дължината на по-късата дума, за да определим, колко ни остава докато стигнем до по-дългата
+                //в този случай, трябва да добавим само една буква - "е" (последната от примера с George)
+                result += word1[j]; //стойността на "е" в ASCII е 101
+            }
+        }else{
+            for (int j = minValue; j < maxValue ; j++) {
+                //Аналогично, тук добавяме стойността на втората дума, след като сме определили "разликата"
+                result += word2[j];
+            }
+        }
+
+
+        return result;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] input = sc.nextLine().split(" "); //правим инпут на масив
+
+        String word1 = input[0]; //вземаме първата дума
+        String word2 = input[1];// вземаме втората дума
+
+
+        long totalSum = sumWords(word1, word2); //резултатът го съхраняваме в променлива, която извиква метода, който се иска по условие
+
+        System.out.println(totalSum); // отпечатваме резултата
+    }
+}
